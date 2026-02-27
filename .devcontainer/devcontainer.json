@@ -3,7 +3,7 @@
   "dockerComposeFile": "../docker-compose.yml",
   "service": "python",
   "workspaceFolder": "/app",
-  // "postCreateCommand": "uv sync",
+  "postCreateCommand": "uv sync",
   "customizations": {
     "vscode": {
       "settings": {
