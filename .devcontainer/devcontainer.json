@@ -2,19 +2,20 @@
   "name": "Mistral AI Dev",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "python",
-  "workspaceFolder": "/app",
-  // "postCreateCommand": "uv sync",
+  "workspaceFolder": "/workspace/app",
+  "postCreateCommand": "uv sync",
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/app/.venv/bin/python"
+        "python.defaultInterpreterPath": "/workspace/app/.venv/bin/python"
       },
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
         "esbenp.prettier-vscode",
         "astral-sh.ty",
-        "shd101wyy.markdown-preview-enhanced"
+        "shd101wyy.markdown-preview-enhanced",
+        "eamodio.gitlens"
       ]
     }
   }
