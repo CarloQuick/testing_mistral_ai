@@ -1,0 +1,12 @@
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    ports:
+      - "8080:80"
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
